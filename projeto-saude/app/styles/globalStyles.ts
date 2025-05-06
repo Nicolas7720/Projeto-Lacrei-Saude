@@ -7,6 +7,12 @@ export const GlobalStyle = createGlobalStyle`
   --foreground: #171717;
   --font-main: "Nunito", sans-serif;
   --font-primary: Arial, Helvetica, sans-serif;
+  --primary: "#FFFFFF";
+
+  --emerald-40: "#018762";
+
+  --purple-10: "#F9F3FF";
+  --purple-20: "#D9C4EE";
 }
 
 @media (prefers-color-scheme: dark) {
