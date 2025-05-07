@@ -9,10 +9,6 @@ export const HeaderRoot = styled.header`
   justify-content: space-between;
   align-items: center;
 `;
-export const HeaderLogo = styled.img`
-  height: 16px;
-  size: 48px;
-`;
 export const HeaderNav = styled.nav`
   display: flex;
   justify-content: center;
@@ -21,7 +17,7 @@ export const HeaderNav = styled.nav`
 export const HeaderButton = styled.button`
   background-color: white;
   font-size: 20px;
-  color: #014c37;
+  color: #28588a;
   border: none;
   padding: 7px;
   border-radius: 7px;
@@ -29,18 +25,21 @@ export const HeaderButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #c4eed190;
+    background-color: #c4d8ee94;
   }
   &.entrar {
     color: white;
-    background-color: #298a46;
+    background-color: #4d8acb;
     border: none;
     padding: 7px;
     border-radius: 7px;
     transition: all 1s;
   }
   &.entrar:hover {
-    background-color: #014c37c4;
+    background-color: #28578a9e;
+  }
+  &.logo {
+    font-family: Arial;
   }
 
   @media screen and (min-width: 720px) {

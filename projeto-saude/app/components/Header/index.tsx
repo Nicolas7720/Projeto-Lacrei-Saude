@@ -27,7 +27,9 @@ export const Header = () => {
     <>
       <HeaderElements.Root>
         <Link href={"/"}>
-          <HeaderElements.Logo src={"/logo_lacreiSaude.svg"} />
+          <HeaderElements.Button className="logo">
+            Lacrei Saúde
+          </HeaderElements.Button>
         </Link>
         <HeaderElements.Nav>
           <HeaderElements.Button>
