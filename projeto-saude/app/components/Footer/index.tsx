@@ -10,7 +10,7 @@ type FooterElementProps = {
 // Estilização com styled-components
 const FooterRoot = styled.footer`
   background-color: #ffffff;
-  padding: 15px 15px 25px 20px;
+  padding: 32px 20px 24px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;

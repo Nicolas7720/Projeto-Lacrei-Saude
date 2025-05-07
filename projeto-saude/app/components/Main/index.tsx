@@ -51,12 +51,11 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 `;
 
 const CardTitle = styled.h3`
   font-size: 1.5rem;
-  color: #28588a;
+  color: #59288b;
   margin-bottom: 10px;
 `;
 
@@ -65,21 +64,31 @@ const CardDescription = styled.p`
   color: #555;
   margin-bottom: 20px;
 `;
-
+const CardDiv = styled.div`
+  display: flex;
+  width: 100%;
+  &.color {
+    border-radius: 20px;
+    width: 10px;
+    height: 100%;
+    margin-right: 20px;
+    background-color: #401d63;
+  }
+`;
 const CardButton = styled(Link)`
   display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
-  background-color: #4d8acb;
+  background-color: #8c4dcc;
   border: none;
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #28588a;
+    background-color: #7b37bf;
   }
 `;
 
@@ -89,7 +98,10 @@ const Main: React.FC = () => {
       {Itens.map((item) => (
         <Card key={item.title}>
           <CardTitle>{item.title}</CardTitle>
-          <CardDescription>{item.resumo}</CardDescription>
+          <CardDiv>
+            <CardDiv className="color"></CardDiv>
+            <CardDescription>{item.resumo}</CardDescription>
+          </CardDiv>
           <CardButton href={item.src}>Saiba Mais</CardButton>
         </Card>
       ))}
