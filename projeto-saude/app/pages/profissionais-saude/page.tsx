@@ -5,7 +5,10 @@ import styled from "styled-components";
 
 const PageContainer = styled.div`
   padding: 40px;
-  background-color: #f9f9f9;
+  background: linear-gradient(
+    to top,
+    ${({ theme }) => theme.colors.gradient["gradient-subtle"]}
+  );
   min-height: calc(
     100vh - 200px
   ); /* Ajuste para considerar o Header e Footer */
@@ -13,14 +16,14 @@ const PageContainer = styled.div`
 
 const Title = styled.h1`
   font-size: 2rem;
-  color: #28588a;
+  color: ${({ theme }) => theme.colors.text["blue-70"]};
   margin-bottom: 20px;
   text-align: center;
 `;
 
 const Description = styled.p`
   font-size: 1.2rem;
-  color: #555;
+  color: ${({ theme }) => theme.colors.text["gray-90"]};
   margin-bottom: 40px;
   text-align: center;
 `;
@@ -33,8 +36,8 @@ const ProfessionalsList = styled.div`
 `;
 
 const ProfessionalCard = styled.div`
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+  background-color: ${({ theme }) => theme.colors.background["gray-10"]};
+  border: 1px solid ${({ theme }) => theme.colors.border["gray-30"]};
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 300px;
@@ -44,19 +47,19 @@ const ProfessionalCard = styled.div`
 
 const ProfessionalName = styled.h3`
   font-size: 1.5rem;
-  color: #28588a;
+  color: ${({ theme }) => theme.colors.text["blue-70"]};
   margin-bottom: 10px;
 `;
 
 const ProfessionalSpecialty = styled.p`
   font-size: 1rem;
-  color: #555;
+  color: ${({ theme }) => theme.colors.text["gray-90"]};
   margin-bottom: 10px;
 `;
 
 const ProfessionalContact = styled.a`
   font-size: 1rem;
-  color: #4d8acb;
+  color: ${({ theme }) => theme.colors.text["blue-50"]};
   text-decoration: none;
 
   &:hover {

@@ -11,18 +11,18 @@ export interface CardItens {
 
 const Itens: CardItens[] = [
   {
-    src: "/profissionais-saude",
+    src: "/pages/profissionais-saude",
     resumo:
       "Conheça os profissionais de saúde que fazem parte da nossa equipe.",
     title: "Profissionais de Saúde",
   },
   {
-    src: "/missao",
+    src: "/pages/missao",
     resumo: "Descubra a missão e os valores que guiam o Lacrei Saúde.",
     title: "Missão",
   },
   {
-    src: "/perguntas-frequentes",
+    src: "/pages/perguntas-frequentes",
     resumo:
       "Encontre respostas para as perguntas mais frequentes sobre nossos serviços.",
     title: "Perguntas Frequentes",
@@ -33,35 +33,45 @@ const MainContainer = styled.main`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 20px;
-  padding: 40px;
-  background-color: #f9f9f9;
-  min-height: calc(
-    100vh - 200px
-  ); /* Ajuste para considerar o Header e Footer */
+  padding: 30px;
+  background-color: ${({ theme }) => theme.colors.background["gray-20"]};
+  min-height: calc(100dvh - 200px);
 `;
 
 const Card = styled.div`
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+  max-height: 320px;
+  min-height: 300px;
+  background-color: ${({ theme }) => theme.colors.background["gray-10"]};
+  border: 1px solid ${({ theme }) => theme.colors.border["gray-30"]};
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  max-width: 400px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const CardTitle = styled.h3`
   font-size: 1.5rem;
-  color: #59288b;
+  color: ${({ theme }) => theme.colors.text["purple-80"]};
   margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 `;
 
 const CardDescription = styled.p`
   font-size: 1rem;
-  color: #555;
+  color: ${({ theme }) => theme.colors.text["gray-70"]};
   margin-bottom: 20px;
 `;
 const CardDiv = styled.div`
@@ -72,7 +82,7 @@ const CardDiv = styled.div`
     width: 10px;
     height: 100%;
     margin-right: 20px;
-    background-color: #401d63;
+    background-color: ${({ theme }) => theme.colors.background["purple-90"]};
   }
 `;
 const CardButton = styled(Link)`
@@ -80,15 +90,15 @@ const CardButton = styled(Link)`
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
-  color: #ffffff;
-  background-color: #8c4dcc;
+  color: ${({ theme }) => theme.colors.text["gray-10"]};
+  background-color: ${({ theme }) => theme.colors.background["purple-70"]};
   border: none;
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #7b37bf;
+  font-family: Arial, Helvetica, sans-serif;
+  --font-geist-nunitoy &:hover {
+    background-color: ${({ theme }) => theme.colors.background["purple-90"]};
   }
 `;
 

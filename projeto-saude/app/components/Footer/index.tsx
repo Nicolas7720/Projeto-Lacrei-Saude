@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import styled from "styled-components";
 
 // Tipagem para os elementos do Footer
@@ -9,9 +8,10 @@ type FooterElementProps = {
 
 // Estilização com styled-components
 const FooterRoot = styled.footer`
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.colors.background["gray-10"]};
   padding: 32px 20px 24px 20px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 `;
@@ -23,11 +23,11 @@ const FooterArea = styled.div`
 `;
 
 const FooterHeading = styled.h3`
-  color: #28588a;
+  color: ${({ theme }) => theme.colors.text["gray-100"]};
 `;
 
 const FooterItem = styled.p`
-  color: black;
+  color: ${({ theme }) => theme.colors.text["blue-70"]};
   font-weight: 700;
   cursor: pointer;
   &:hover {

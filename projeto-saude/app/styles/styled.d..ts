@@ -1,8 +1,65 @@
 import "styled-components";
-import { theme } from "./theme";
-
-type Theme = typeof theme;
 
 declare module "styled-components" {
-  export type DefaultTheme = Theme;
+  export interface DefaultTheme {
+    colors: {
+      background: {
+        "blue-10": "#ebf2f9";
+        "blue-50": "#4d8acb";
+        "gray-10": "#ffffff";
+        "gray-20": "#f0f0f0";
+        "gray-30": "#cfcfcf";
+        "purple-10": "#f9f3ff";
+        "purple-50": "#8c4dcc";
+        "purple-60": "#7333b2";
+        "purple-70": "#7b37bf";
+        "purple-80": "#59288b";
+        "purple-90": "#401d63";
+      };
+      text: {
+        "blue-50": "#4d8acb";
+        "blue-70": "#28588a";
+        "gray-10": "#FFFFFF";
+        "gray-40": "#bfbfbf";
+        "gray-70": "#515151";
+        "gray-80": "#404040";
+        "gray-90": "#2d2d2d";
+        "gray-100": "#131313";
+        "purple-80": "#59288b";
+        "purple-90": "#401d63";
+        "red-60": "#bc1c1c";
+        "red-70": "#9b1717";
+        "red-80": "#6f1111";
+      };
+      border: {
+        "blue-50": "#4d8acb";
+        "blue-90": "#11263b";
+        "gray-10": "#FFFFFF";
+        "gray-30": "#cfcfcf";
+        "gray-70": "#515151";
+        "gray-90": "#2d2d2d";
+        "gray-100": "#131313";
+        "red-60": "#bc1c1c";
+      };
+      Icon: {
+        "blue-50": "#4d8acb";
+        "blue-70": "#28588a";
+        "gray-10": "#FFFFFF";
+        "gray-40": "#bfbfbf";
+        "gray-70": "#515151";
+        "gray-100": "#131313";
+      };
+      buttonBg: {
+        "blue-50": "#4d8acb";
+        "blue-60": "#29598c";
+        "blue-70": "#28588a";
+        "blue-80": "#1d3f63";
+        "gray-70": "#515151";
+      };
+      gradient: {
+        "gradient-subtle": "#f5fffb,  #ffffff";
+        "gradient-tertiary": "#Df1098, #ba17e2";
+      };
+    };
+  }
 }

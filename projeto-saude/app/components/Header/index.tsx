@@ -6,7 +6,7 @@ import { ChevronDown, CircleUser, HelpCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const HeaderRoot = styled.header`
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.colors.background["gray-10"]};
   max-width: 100vw;
   padding: 24px;
   display: flex;
@@ -21,9 +21,11 @@ const Nav = styled.nav`
 `;
 
 const HeaderButton = styled.button`
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.background["gray-10"]};
   font-size: 20px;
-  color: #28588a;
+  font-family: --font-geist-nunito;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.text["blue-70"]};
   border: none;
   padding: 7px;
   border-radius: 7px;
@@ -31,11 +33,11 @@ const HeaderButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #c4d8ee94;
+    background-color: ${({ theme }) => theme.colors.background["blue-10"]};
   }
   &.entrar {
     color: white;
-    background-color: #4d8acb;
+    background-color: ${({ theme }) => theme.colors.background["blue-50"]};
     border: none;
     padding: 7px;
     border-radius: 7px;

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-import { GlobalStyle } from "@/app/styles/globalStyles";
-import Footer from "./components/Footer";
-import { Header } from "./components/Header";
+import { ThemeRegistry } from "./components/Theme/ThemeRegistry";
 
 const geistNunito = Nunito({
   variable: "--font-geist-nunito",
@@ -23,10 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${geistNunito.variable}`}>
-        <GlobalStyle />
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <ThemeRegistry>{children}</ThemeRegistry>
       </body>
     </html>
   );
