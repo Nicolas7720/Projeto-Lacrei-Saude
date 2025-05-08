@@ -88,7 +88,7 @@ export const Header = () => {
       <Nav>
         <HeaderButton>
           {isClient && larguraTela <= 720 ? (
-            <HelpCircle width={25} height={25} />
+            <HelpCircle width={25} height={25} aria-label="ajuda" />
           ) : (
             "Quem Somos"
           )}
@@ -96,10 +96,10 @@ export const Header = () => {
         {larguraTela > 720 && <HeaderButton>Ajuda</HeaderButton>}
         <HeaderButton className="entrar">
           {isClient && larguraTela <= 720 ? (
-            <CircleUser width={25} height={25} />
+            <CircleUser width={25} height={25} aria-label="user" />
           ) : (
             <>
-              Entrar <ChevronDown width={25} height={25} />
+              Entrar <ChevronDown width={25} height={25} aria-label="opcoes" />
             </>
           )}
         </HeaderButton>
