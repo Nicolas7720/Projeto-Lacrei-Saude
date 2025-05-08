@@ -1,10 +1,10 @@
-Projeto
+Projeto Institucional - Página Web Responsiva 🌐📱💻
 
 Este projeto é uma página institucional responsiva desenvolvida com Next.js, utilizando React, TypeScript e styled-components. O foco está em uma navegação clara, design limpo e conteúdo acessível em diferentes tamanhos de tela.
 
-Funcionalidades
+✨ Funcionalidades
 
-Header Responsivo
+🔝 Header Responsivo
 
 Mobile: Exibe 3 botões.
 
@@ -13,48 +13,48 @@ Desktop: Exibe 4 botões.
 Apenas o botão "Logo" está funcional e redireciona para a página inicial.
 
 
-Main (Conteúdo Principal)
+🧩 Main (Conteúdo Principal)
 
 Contém três cards com título, descrição e botão "Saiba mais", que redirecionam para páginas específicas:
 
-1. Missão
+1. 🎯 Missão
 
 Mostra um pequeno resumo sobre a missão da organização.
 
 
 
-2. Profissionais de Saúde
+2. 🩺 Profissionais de Saúde
 
 Exibe três cards com nomes fictícios e suas respectivas áreas de atuação.
 
 
 
-3. Perguntas Frequentes
+3. ❓ Perguntas Frequentes
 
 Ao clicar em um card, a resposta à pergunta é exibida.
 
 
 
 
-Footer (Rodapé)
+🔻 Footer (Rodapé)
 
 Rodapé simples com informações complementares ou institucionais.
 
 
-Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas
 
-Next.js
+⚛️ Next.js
 
-React
+⚙️ React
 
-TypeScript
+🧠 TypeScript
 
-styled-components
+🎨 styled-components
 
-Jest (para testes)
+✅ Jest (para testes)
 
 
-Testes Automatizados
+🧪 Testes Automatizados
 
 Os testes foram implementados com Jest.
 
@@ -63,11 +63,12 @@ Verificações incluíram a presença dos elementos no header e no main.
 Ainda não foi possível testar a navegação via clique nos botões, pois isso requer configuração extra com next/router e mocks apropriados.
 
 
-Como executar o projeto localmente
+▶️ Como executar o projeto localmente
 
 1. Clone o repositório:
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/Nicolas7720/Projeto-Lacrei-Saude
+
 cd nome-do-repositorio
 
 
@@ -87,7 +88,7 @@ npm test
 
 
 
-Melhorias Futuras
+🚀 Melhorias Futuras
 
 Adicionar navegação funcional aos demais botões do header.
 
